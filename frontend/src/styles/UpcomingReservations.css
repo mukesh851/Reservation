@@ -1,0 +1,40 @@
+
+.upcoming-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f3f4f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+.upcoming-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.upcoming-container h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #3b82f6;
+  margin: 0.5rem auto 0;
+  border-radius: 9999px;
+}
+
+.reservations-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .reservations-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
